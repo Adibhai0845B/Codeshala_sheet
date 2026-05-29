@@ -5,3 +5,10 @@ dist
 .cache
 .vite
 .replit
+
+.replit-artifact
+.replit
+node_modules
+dist
+.env
+.env.local

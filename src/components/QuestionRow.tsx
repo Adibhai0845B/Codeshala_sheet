@@ -1,13 +1,12 @@
 import { Checkbox } from "./ui/checkbox";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { FileText, Bookmark, Youtube, ExternalLink } from "lucide-react";
+import { FileText, Bookmark, PlayCircle, ExternalLink } from "lucide-react";
 import { DSAQuestion } from "@/data/dsaQuestions";
 import { useProgress } from "@/hooks/useProgress";
 import { useState } from "react";
 import NoteModal from "./NoteModal";
 import { cn } from "@/lib/utils";
-
 interface QuestionRowProps {
   question: DSAQuestion;
 }
@@ -102,10 +101,10 @@ export default function QuestionRow({ question }: QuestionRowProps) {
           >
             {question.youtubeLink ? (
               <a href={question.youtubeLink} target="_blank" rel="noreferrer" title="YouTube Solution">
-                <Youtube className="h-4 w-4" />
+                <PlayCircle className="h-4 w-4" />
               </a>
             ) : (
-              <span><Youtube className="h-4 w-4 opacity-50" /></span>
+              <span><PlayCircle className="h-4 w-4 opacity-50" /></span>
             )}
           </Button>
 

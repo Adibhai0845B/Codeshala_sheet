@@ -21,7 +21,7 @@ export default function Navbar() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Terminal className="h-6 w-6 text-primary" />
             <span className="font-bold sm:inline-block">
-              CodeRank Sheet
+              Coding Gurukul Sheet
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -51,7 +51,7 @@ export default function Navbar() {
           <SheetContent side="left" className="pr-0">
             <Link href="/" className="flex items-center space-x-2 mb-8">
               <Terminal className="h-6 w-6 text-primary" />
-              <span className="font-bold">CodeRank Sheet</span>
+              <span className="font-bold">Coding Gurukul Sheet</span>
             </Link>
             <div className="flex flex-col space-y-3">
               {links.map((link) => (
@@ -71,7 +71,7 @@ export default function Navbar() {
         <div className="flex flex-1 items-center justify-end space-x-2 md:hidden">
           <Link href="/" className="flex items-center space-x-2">
             <Terminal className="h-6 w-6 text-primary" />
-            <span className="font-bold">CodeRank Sheet</span>
+            <span className="font-bold">Coding Gurukul Sheet</span>
           </Link>
         </div>
       </div>
